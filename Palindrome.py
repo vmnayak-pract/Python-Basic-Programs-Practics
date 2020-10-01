@@ -1,14 +1,8 @@
-num=int(input("Enter the number:"))
+# This program will be able to check for palindrome of string and number both type of data.
 
-temp=num
-rev=0
+user_inp = input("Enter a input to check for palindrome: ")
 
-while(num>0):
-    digit=num%10
-    rev=rev*10+digit
-    num=num//10
-    
-if(temp==rev):
-    print("The number is a Palindrome")
+if user_inp == user_inp[::-1]:
+    print("Your input \""+ user_inp+"\" is palindrome.")
 else:
-    print("The number is not a palindrome")
+    print("Not Palindrome")
